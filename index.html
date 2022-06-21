@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RocketBlog</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {}
+
+        header {
+            background-color: #290742;
+            height: 544px;
+            position: absolute;
+            width: 100%;
+            border-bottom: 5px solid green;
+        }
+
+        .cointaner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 44px;
+            width: 100%;
+            margin-top: 64px;
+            gap: 7rem;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            flex: 3em;
+            gap: .8rem;
+            color: white;
+            font-size: 20px;
+            border-left: 3px solid green;
+
+        }
+
+        div img {
+            justify-content: center;
+            align-items: center;
+            left: 120.86px;
+            top: 68px;
+            flex: 1;
+        }
+
+        .Pesquisa {
+            display: flex;
+            position: relative;
+            margin-left: 100px;
+        }
+
+        section {
+            display: flex;
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+
+        .primeiraColuna {
+            display: flex;
+            font: white;
+            list-style: none;
+            flex-direction: column;
+            flex: 1;
+            width: 469px;
+        }
+
+        .primeiraFrase {
+            font-family: Poppins;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 54px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #9E6DC2;
+        }
+
+        .segundaFrase {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FBF6FF;
+            margin-top: 25px;
+        }
+
+        section ul {
+            flex: 30%;
+            margin-right: 80px;
+            list-style: none;
+        }
+
+        .primeiraColuna :nth-child(3) {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 27px;
+            color: #9E6DC2;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .segundaColuna {
+            display: flex;
+            gap: 1rem;
+
+        }
+
+        .conteudoPrimeiro {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 10%;
+            list-style: none;
+            row-gap: 0.5rem;
+            border-left: 100px;
+        }
+
+        .conteudoSegundo {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            flex: 1;
+            row-gap: 0.5rem;
+        }
+
+        .ultimoContainer {
+            display: flex;
+            list-style: none;
+            row-gap: 0.5rem;
+        }
+
+        .data {
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .titulo {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #290742;
+        }
+
+        .corpo {
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="cointaner">
+            <div>
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <aside>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Sobre</li>
+                    <li>Categorias</li>
+                    <li>Contato</li>
+            </aside>
+            <ul class="Pesquisa">
+                <input type="text" id="Pesquisar" placeholder="   Busca" font-size="18px" height="44px" width="300px">
+                <button>
+                    <img src="./images/search.svg" alt="">
+                </button>
+            </ul>
+        </div>
+
+        <aside>
+            <section>
+                <ul class="primeiraColuna">
+                    <li class="primeiraFrase">Veja o guia definitivo para conquistar seus objetivos como DEV em 2022
+                    </li>
+                    <li class="segundaFrase">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in
+                        aliquet ut adipiscing
+                        neque. Sed volutpat aenean sit vitae, sed tristique placerat hac.</li>
+                    <li>Veja Mais
+                        <img src="./images/arrow-right.svg" alt="">
+                    </li>
+                </ul>
+                <ul>
+                    <img src="./images/featured-image.png" alt="">
+                </ul>
+            </section>
+        </aside>
+        <aside>
+            <section class="segundaColuna">
+                <ul class="conteudoPrimeiro">
+                    <img src="./images/post-1.png" alt="">
+                    <li class="data">Junho 20, 2022</li>
+                    <li class="titulo"> Começando no ReactJS em 2022</li>
+                    <li class="corpo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos non quaerat consequuntur
+                        doloremque
+                        culpa, nihil ea blanditiis porro voluptatibus voluptatum libero quod qui deleniti magni esse
+                        inventore, deserunt voluptate est?</li>
+                </ul>
+                <ul class="conteudoSegundo">
+                    <li class="data">Junho 20, 2022</li>
+                    <li class="titulo">Conheça as principais técnicas para conseguir uma vaga internacional em programação</li>
+                    <li class="corpo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic atque possimus, deserunt
+                        nostrum corporis deleniti cumque repellat consequuntur itaque non doloribus soluta obcaecati
+                        doloremque illo iste aperiam dolores? Est.</li>
+                    <br>
+                    <li class="data">Junho 20, 2022</li>
+                    <li class="titulo">Veja a evolução do Front-end na prática</li>
+                    <li class="corpo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing
+                        neque.</li>
+                </ul>
+            </section>
+        </aside>
+        <main>
+            <section class="ultimoContainer">
+                <ul>
+                    <img src="./images/post-2.png" alt="">
+                    <li class="data">Junho 20, 2022</li>
+                    <li class="titulo">10 dicas para conseguir a vaga desejada</li>
+                    <li class="corpo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet
+                        ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</li>
+                </ul>
+                <ul>
+                    <img src="./images/post-3.png" alt="">
+                    <li class="data">Junho 20, 2022</li>
+                    <li class="titulo">Deixe seu código mais semântico com essas dicas</li>
+                    <li class="corpo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet
+                        ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</li>
+                </ul>
+                <ul>
+                    <img src="./images/post-4.png" alt="">
+                    <li class="data">Junho 20, 2022</li>
+                    <li class="titulo">Use essas dicas nas suas aplicações mobile</li>
+                    <li class="corpo">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing
+                        neque. Sed volutpat aenean sit vitae, sed tristique.</li>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </header>
+</body>
+
+</html>
